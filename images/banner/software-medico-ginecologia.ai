@@ -1,0 +1,70 @@
+%!PS-Adobe-3.0
+%%Creator: Macromedia Fireworks 8
+%%DocumentNeededResources: procset Adobe_level2_AI5 1.0 0
+%%+ procset Adobe_packedarray 2.0 0
+%%+ procset Adobe_cmykcolor 1.1 0
+%%+ procset Adobe_cshow 1.1 0
+%%+ procset Adobe_customcolor 1.0 0
+%%+ procset Adobe_typography_AI5 1.0 0
+%%+ procset Adobe_Illustrator_AI5 1.0 0
+%%BoundingBox:0 0 1016 341
+%AI3_TemplateBox: 0 0 1016 341
+%%PageOrigin:0 0
+%AI5_FileFormat 3
+%AI3_ColorUsage: Color
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%EndComments
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+Adobe_packedarray /initialize get exec
+Adobe_cmykcolor /initialize get exec
+Adobe_cshow /initialize get exec
+Adobe_customcolor /initialize get exec
+Adobe_typography_AI5 /initialize get exec
+Adobe_Illustrator_AI5 /initialize get exec
+%%EndSetup
+1 1 1 1 0 0 0 79 128 255 Lb
+(Capa 1) Ln
+u
+0.0 G
+331.00 443.00 m
+1027.00 443.00 l
+1027.00 -21.00 l
+331.00 -21.00 l
+331.00 443.00 l
+S
+331.00 443.00 m
+1027.00 -21.00 l
+S
+1027.00 443.00 m
+331.00 -21.00 l
+S
+U
+0.800 0.800 0.800 Xa
+1 XR
+-148.00 610.99 m
+472.08 422.01 l
+315.09 -93.10 l
+-305.01 96.99 l
+-148.00 610.99 l
+f
+1.000 1.000 1.000 Xa
+1 XR
+-156.00 603.99 m
+464.07 415.01 l
+307.09 -100.11 l
+-313.01 89.99 l
+-156.00 603.99 l
+f
+LB
+%%PageTrailer
+gsave annotatepage grestore showpage
+%%Trailer
+Adobe_Illustrator_AI5 /terminate get exec
+Adobe_typography_AI5 /terminate get exec
+Adobe_customcolor /terminate get exec
+Adobe_cshow /terminate get exec
+Adobe_cmykcolor /terminate get exec
+Adobe_packedarray /terminate get exec
+%%EOF

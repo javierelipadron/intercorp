@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Toma de Requerimientos para Diseño Web</title>
+<script type="text/javascript" language="javascript" src="js/colorPicker.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" href="css/colorPicker.css" type="text/css"></link>
+
+		
+
+<script language="JavaScript">
+
+
+	$(document).ready(function()
+	{
+
+		 $('form').submit(function() {
+					
+						if($("#empresa").val().length < 3) {  
+							alert("Debes colocar el nombre de la Empresa para continuar");  
+							return false;  
+						}else
+						if($("#persona_contacto").val().length < 3) {  
+							alert("Debes colocar el nombre de la Persona de Contacto para continuar");  
+							return false;  
+						}else
+						if($("#dominio1").val().length < 3) {  
+							alert("Debes colocar al menos el nombre de un Dominio ");  
+							return false;  
+						}
+						
+						
+		});
+		
+	});
+
+</script>
+<style>
+
+body{ margin-left:50px;}
+
+input,textarea {
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 14px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+input:focus {
+	border-color: #0099FF;
+}
+
+#comentario{ width:500px; height:200px; font-size:14px}
+
+#h1{
+	background-color:#333333; color:#FFFFFF; margin:-20px; margin-left:-50px; padding:10px;  
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	border-bottom:1px solid #fff;
+}
+
+</style>
+</head>
+<body>
+
+
+<form action="agregar_requerimiento.php" method="post">
+
+<h1 id="h1" align="center" > 
+ Toma de Requerimientos para Diseño Web <img src="images/logo.png" /> </h1>
+<br/>
+<h2><img src="images/0.png"/> Datos Personales </h2>
+
+<table>
+
+	<tr>
+		<td> Empresa</td>
+		<td> <input type="text" name="empresa"> </td>
+	</tr>
+	<tr>
+		<td> Persona de Contacto </td>
+		<td> <input type="text" name="persona_contacto"> </td>
+	</tr>
+</table>	
+
+<h2><img src="images/1.png"/> 1. Seleccion de Dominio </h2>
+<p> Escriba los dominio web segun el orden de su preferencia para su Sitio Web, estos pueden ser .COM, .COM.VE</p>
+<table>
+
+	<tr>
+		<td> 1ra Opcion </td>
+		<td> <input type="text" id="dominio1" name="dominio1" > </td>
+	</tr>
+	<tr>
+		<td> 2da Opcion </td>
+		<td> <input type="text" id="dominio2" name="dominio2"> </td>
+	</tr>
+	<tr>
+		<td> 3ra Opcion </td>
+		<td> <input type="text" id="dominio3" name="dominio3"> </td>
+	</tr>
+</table>
+
+<h2><img src="images/2.png"/> 2. Definicion de Colores </h2>
+
+<p> Seleccione los colores que desea sean incluidos en su sitio web:</p>
+<table>
+	<tr>
+		<td> Color Principal </td>
+		<td> <input type="text" id="color_primario" name="color_primario" onclick="startColorPicker(this)" onkeyup="maskedHex(this)"> </td>
+
+		<td> Color Secundario </td>
+		<td> <input type="text" id="color_secundario" name="color_secundario" onclick="startColorPicker(this)" onkeyup="maskedHex(this)"> </td>
+	<tr>
+	</tr>
+		<td> Color Terciario </td>
+		<td> <input type="text" id="color_terciario" name="color_terciario" onclick="startColorPicker(this)" onkeyup="maskedHex(this)"> </td>
+		
+		<td> Color de Fondo de su Web </td>
+		<td> <input type="text" id="color_fondo" name="color_fondo" onclick="startColorPicker(this)" onkeyup="maskedHex(this)"> </td>
+	</tr>
+</table>
+
+<h2> <img src="images/3.png"/> 3.  Links de su sitio Web </h2>
+
+<p> Escriba los Link principales del menu principal de su sitio web, por defecto hemos colocado <i>Inicio</i> como pagina principal y <i>Contacto</i>:</p>
+<table>
+	<tr>
+		<td> Nombre 1er Link </td>
+		<td> <input type="text" id="link1" name="link1" value="Inicio"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink1" name="dlink1"> </textarea> </td>
+	</tr>
+	<tr>
+		<td> Nombre 2do Link </td>
+		<td> <input type="text" id="link2" name="link2"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink2" name="dlink2"> </textarea> </td>
+	</tr>
+	<tr>
+		<td> Nombre 3er Link </td>
+		<td> <input type="text" id="link3" name="link3"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink3" name="dlink3"> </textarea> </td>
+	</tr>
+	<tr>	
+		<td> Nombre 4to Link </td>
+		<td> <input type="text" id="link4" name="link4"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink4" name="dlink4"> </textarea> </td>
+	</tr>
+	<tr>	
+		<td> Nombre 5to Link </td>
+		<td> <input type="text" id="link5" name="link5"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink5" name="dlink5"> </textarea> </td>
+	</tr>
+	<tr>	
+		<td> Nombre 6to Link </td>
+		<td> <input type="text" id="link6" name="link6"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink6" name="dlink6"> </textarea> </td>
+	</tr>
+	<tr>	
+		<td> Nombre 7mo Link </td>
+		<td> <input type="text" id="link7" name="link7"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink7" name="dlink7"> </textarea> </td>
+	</tr>
+	<tr>	
+		<td> Nombre 8vo Link </td>
+		<td> <input type="text" id="link8" name="link8" value="Contacto"> </td>
+		<td> Descripcion </td>
+		<td> <textarea id="dlink8" name="dlink8"> </textarea> </td>
+	</tr>
+</table>
+
+
+<h2> <img src="images/4.png"/> 4.  Comentarios sobre el proyecto </h2>
+<table width="100%">
+	<tr>
+		<td> <textarea id="comentario" name="comentario"> </textarea> </td>
+	</tr>
+	<tr>
+		<td><div align="right"> <input id="submit" type="submit" value="Enviar Requerimientos"  src="images/4.png" /> </div> </td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
